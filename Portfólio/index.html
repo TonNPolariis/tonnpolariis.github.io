@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Cleverson Castilho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="" class="efeito-cursor">Home</a></li>
+            <li><a href="https://github.com/TonNPolariis" class="efeito-cursor">Projetos</a></li>
+            <li><a href="#SobreMim" class="efeito-cursor">Sobre</a></li>
+            <li><a href="#Contato" class="efeito-cursor">Contato</a></li>
+        </ul>
+    </header>
+
+    <section class="principal">
+        <div>
+            <h1>Olá, eu sou o <span>Cleverson Castilho</span>.</h1>
+            <p>Desenvolvedor criativo focado em construir experiências digitais expcionais e interfaces intuitivas</p>
+            <a href="#Projetos" class="botaoProjetos efeito-cursor">Ver projetos</a> 
+        </div>
+    </section>
+
+    <section class="secao">
+        <h2 class="titulo-secao">Projetos</h2>
+        <div class="grade-projetos" id="Projetos">
+            <div class="card-projeto efeito-cursor">
+                <img src="img/tecnologia-de-fundo-de-gradiente.jpg" alt="" class="img-projeto">
+                <div class="info-projeto"><h3>Inteligência Artificial</h3>
+                <p>Inteligencia artifical intermediária sem treinamento</p>
+                <a href="https://github.com/TonNPolariis">Ver Projeto ➔</a>
+            </div>
+        </div>
+        <div class="grade-projetos">
+            <div class="card-projeto efeito-cursor">
+                <img src="img/criatura-de-dragao-mitico-em-estilo-anime.jpg" alt="" class="img-projeto">
+                <div class="info-projeto"><h3>Animação Anime</h3>
+                <p>Site com tema de personagens japoneses com animação em tempo real, responsividade, qualidade e imersão no tema</p>
+                <a href="https://github.com/TonNPolariis">Ver Projeto ➔</a>
+                </div>
+            </div>
+        </div>
+        <div class="grade-projetos">
+            <div class="card-projeto efeito-cursor">
+                <img src="img/supercarro-cyberpunk-em-ingles.jpg" alt="" class="img-projeto">
+                <div class="info-projeto"><h3>Site Automatizado</h3>
+                <p>Automatização em tempo real com animação dinâmica e responsíva</p>
+                <a href="https://github.com/TonNPolariis">Ver Projeto ➔</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao">
+        <h2 class="titulo-secao" id="SobreMim">Sobre mim</h2>
+        <div class="sobre">
+            <img src="img/FotoCleverson.jpg" alt="" class="img-sobre">
+            <div class="conteudo-sobre">
+                <h2>Desenvolvedor com paixão por criar soluções digitais</h2>
+                <p>Sou um desenvolvedor web especializado em criar experiências digitais excepcionais. Com foco em design centrado no usuário, trabalho para construir aplicações web moodernas e intuitivas.</p>
+                <p>Minha abordagem combina criatividade com funcionalidade, resultando em produtos digitais que são bonitos quanto eficazes.</p>
+                <div class="habilidades">
+                    <span class="tag-habilidades efeito-cursor">HTML5</span>
+                    <span class="tag-habilidades efeito-cursor">Css</span>
+                    <span class="tag-habilidades efeito-cursor">JavaScript</span>
+                    <span class="tag-habilidades efeito-cursor">React</span>
+                    <span class="tag-habilidades efeito-cursor">Flask</span>
+                    <span class="tag-habilidades efeito-cursor">Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao">
+        <h2 class="titulo-secao" id="Contato">Contato</h2>
+        <div class="botoes-contato">
+            <a href="https://wa.me/554199562981?text=Ol%C3%A1!%20Olhei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20melhor%20com%20voc%C3%AA." class="botao-contato-whatsapp efeito-cursor">
+                <span>Whatsapp</span>
+            </a>
+            
+            <a href="mailto:awaken141@gmail.com" class="botao-contato-email efeito-cursor">
+                <span>Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/cleverson-castilho-14911636b" class="botao-contato-linkedin efeito-cursor">
+                <span>Linkedin</span>
+            </a>
+            <a href="https://github.com/TonNPolariis" class="botao-contato-github efeito-cursor">
+                <Span>Github</Span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito com HTML5 e CSS pelo Cleverson Castilho</p>
+    </footer>
+
+    <div class="cursor"></div>
+
+</body>
+    <script>
+        const cursor = document.querySelector('.cursor')
+
+        document.addEventListener('mousemove', function(info){
+            cursor.style.left = info.clientX + 'px'
+            cursor.style.top = info.clientY + 'px'
+        })
+    </script>
+</html>
